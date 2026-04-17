@@ -1,86 +1,541 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>Recall Mayor Paul Coogan</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recall Mayor Paul Coogan</title>
 
-<style>
-body {
-  font-family: Arial;
-  background: #0b3d91;
-  color: white;
-  text-align: center;
-}
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'es,pt,ht,km',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
 
-header {
-  padding: 20px;
-}
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-img {
-  width: 200px;
-  border-radius: 50%;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-a.button {
-  background: gold;
-  color: black;
-  padding: 15px;
-  margin: 10px;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #071a4d 0%, #0b3d91 45%, #06153a 100%);
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-section {
-  padding: 30px;
-}
-</style>
+    header {
+      background: linear-gradient(180deg, #08163b 0%, #0b2d73 100%);
+      border-bottom: 4px solid #f4c542;
+      text-align: center;
+      padding: 30px 20px 20px;
+      box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+      width: 220px;
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      border: 4px solid #f4c542;
+      background: #ffffff;
+    }
+
+    h1 {
+      margin: 10px 0 8px;
+      color: #f4c542;
+      font-size: 2.2rem;
+    }
+
+    .subtitle {
+      margin: 0 auto 15px;
+      max-width: 800px;
+      color: #dbe8ff;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+      display: inline-block;
+      padding: 8px 0;
+    }
+
+    nav a:hover {
+      color: #f4c542;
+    }
+
+    #google_translate_element {
+      text-align: center;
+      margin: 20px auto 0;
+      padding: 0 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 35px 20px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero h2 {
+      color: #f4c542;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto 25px;
+      font-size: 1.1rem;
+    }
+
+    .button-row {
+      margin-top: 20px;
+    }
+
+    .button,
+    button.button {
+      display: inline-block;
+      background: #f4c542;
+      color: #08163b;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 24px;
+      margin: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .button:hover,
+    button.button:hover {
+      opacity: 0.92;
+    }
+
+    .section-box {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    h2, h3 {
+      color: #f4c542;
+      margin-top: 0;
+    }
+
+    .donation-note,
+    .legal-note,
+    .about-text {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .donation-buttons {
+      margin: 20px 0;
+    }
+
+    .volunteer-options {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      padding-left: 20px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #f4c542;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #c9d8ff;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .facebook-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .about-section {
+      text-align: left;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .about-section ul {
+      padding-left: 22px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #05112f;
+      border-top: 4px solid #f4c542;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #dbe8ff;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 6px 0;
+      }
+
+      .button,
+      button.button {
+        width: calc(100% - 16px);
+        max-width: 320px;
+      }
+    }
+  </style>
+
 </head>
-
 <body>
 
-<header>
-<img src="YOUR-LOGO-FILENAME.jpeg">
-<h1>Recall Mayor Paul Coogan</h1>
-</header>
+  <header>
+    <img src="YOUR-LOGO-FILENAME.jpeg" alt="Recall Paul Coogan logo" class="logo">
+    <h1>Recall Mayor Paul Coogan</h1>
+    <p class="subtitle">
+      Committee to Recall Mayor Paul Coogan PAC
+    </p>
 
-<section>
-<h2>Donate</h2>
+```
+<nav>
+  <a href="#donate">Donate</a>
+  <a href="#volunteer">Volunteer</a>
+  <a href="#facebook">Facebook</a>
+  <a href="#about">Why Recall?</a>
+</nav>
+```
 
-<a href="#" class="button">$25</a>
-<a href="#" class="button">$50</a>
-<a href="#" class="button">$100</a>
+  </header>
 
-<p>
-Contributions must follow Massachusetts campaign finance laws.
-</p>
-</section>
+  <div id="google_translate_element"></div>
 
-<section>
-<h2>Volunteer</h2>
+  <section class="hero">
+    <h2>It’s Time for New Leadership in Fall River</h2>
+    <p>
+      This recall effort is about accountability, transparency, and restoring trust in city government.
+    </p>
 
-<form action="mailto:recallpaulcoogan@gmail.com" method="post">
-<input type="text" placeholder="Your Name"><br>
-<input type="email" placeholder="Your Email"><br>
-<br>
-<button class="button">Send</button>
+```
+<div class="button-row">
+  <a href="#" class="button">$25</a>
+  <a href="#" class="button">$50</a>
+  <a href="#" class="button">$100</a>
+  <a href="#" class="button">$250</a>
+</div>
+```
+
+  </section>
+
+  <section id="donate" class="section-box">
+    <h2>Donate</h2>
+
+```
+<div class="donation-note">
+  <p>
+    Your contribution helps support outreach, organizing, and the work needed to build this recall effort across Fall River.
+  </p>
+
+  <div class="donation-buttons">
+    <a href="#" class="button">$25</a>
+    <a href="#" class="button">$50</a>
+    <a href="#" class="button">$100</a>
+    <a href="#" class="button">$250</a>
+  </div>
+
+  <p>
+    Online donation links will be connected next. For now, these buttons are placeholders.
+  </p>
+
+  <h3>Donation Rules</h3>
+  <p class="legal-note">
+    Contributions must comply with Massachusetts campaign finance laws. Donations are not tax deductible.
+    Contributors may be required to provide their name, address, occupation, and employer information.
+    Please do not contribute unless you are legally permitted to do so.
+  </p>
+</div>
+```
+
+  </section>
+
+  <section id="volunteer" class="section-box">
+    <h2>Volunteer</h2>
+
+```
+<div class="about-text">
+  <p>
+    Join the recall effort and tell us how you want to help.
+  </p>
+</div>
+
+<ul class="volunteer-options">
+  <li>Collect signatures</li>
+  <li>Knock doors</li>
+  <li>Make phone calls</li>
+  <li>Help at events</li>
+  <li>Spread the word online</li>
+  <li>General volunteer support</li>
+</ul>
+
+<form action="mailto:recallpaulcoogan@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="Full Name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="Email" required>
+
+  <label for="phone">Phone</label>
+  <input type="text" id="phone" name="Phone">
+
+  <label for="help">How would you like to help?</label>
+  <select id="help" name="Volunteer Interest">
+    <option>Collect signatures</option>
+    <option>Knock doors</option>
+    <option>Make phone calls</option>
+    <option>Help at events</option>
+    <option>Spread the word online</option>
+    <option>General volunteer support</option>
+  </select>
+
+  <label for="message">Anything else you want us to know?</label>
+  <textarea id="message" name="Message"></textarea>
+
+  <div style="text-align:center; margin-top: 18px;">
+    <button type="submit" class="button">Send Volunteer Form</button>
+  </div>
 </form>
-</section>
 
-<section>
-<h2>Why Recall?</h2>
-
-<p>
-It’s time for accountability and new leadership in Fall River.
+<p style="text-align:center; margin-top: 20px;">
+  This form currently opens your email app to send the message. We can improve this next.
 </p>
+```
 
-</section>
+  </section>
 
-<footer>
-<p>
-Paid for by the Committee to Recall Mayor Paul Coogan PAC.
+  <section id="facebook" class="section-box">
+    <h2>Follow Us on Facebook</h2>
+    <p>
+      Stay updated, share posts, and help spread the word.
+    </p>
+
+```
+<div class="facebook-link">
+  <a href="#" class="button">Visit Our Facebook Page</a>
+</div>
+
+<p style="margin-top: 15px;">
+  We can add your real Facebook link in the next update.
 </p>
-</footer>
+```
+
+  </section>
+
+  <section id="about" class="section-box">
+    <h2>Why We Are Calling for a Recall</h2>
+
+```
+<div class="about-section">
+  <h3>It’s Time for New Leadership in Fall River</h3>
+
+  <p>Fellow residents,</p>
+
+  <p>
+    This recall effort is not about politics—it’s about accountability.
+  </p>
+
+  <p>
+    Under Paul Coogan, Fall River has seen a consistent pattern of weak leadership, poor judgment, and a lack of transparency that has eroded trust in our city government.
+  </p>
+
+  <h3>Failure When It Mattered Most</h3>
+  <p>
+    When a major winter storm hit in February 2026, our city wasn’t ready. Streets went uncleared, neighborhoods were left stranded, and residents were forced to deal with unsafe conditions for days. The situation became so severe that outside help—including state resources—was needed to step in.
+  </p>
+
+  <p>
+    That wasn’t just bad luck. That was a failure of leadership.
+  </p>
+
+  <h3>Secrecy and Dysfunction in Our Schools</h3>
+  <p>
+    As Chair of the School Committee, Mayor Coogan has created confusion instead of stability.
+  </p>
+
+  <p>
+    He filed a complaint with the state about the School Committee—without informing the members he leads—and only revealed it weeks later. That decision blindsided the committee, undermined trust, and disrupted the work being done on behalf of our students.
+  </p>
+
+  <p>
+    Public meetings have also been mishandled, with residents denied equal opportunity to speak. The result? Frustration, division, and a growing sense that decisions are being made without the public’s voice.
+  </p>
+
+  <h3>Public Safety Concerns Are Growing</h3>
+  <p>
+    Public safety is one of the most basic responsibilities of any city government—and residents increasingly feel it is not being prioritized.
+  </p>
+
+  <p>Across Fall River, people are voicing concerns about:</p>
+  <ul>
+    <li>Slow or inconsistent responses to ongoing issues</li>
+    <li>Lack of clear communication from leadership</li>
+    <li>Ongoing instability and controversy surrounding police leadership</li>
+    <li>Decisions being made without transparency or proper oversight</li>
+  </ul>
+
+  <p>
+    Public safety depends on trust, coordination, and strong leadership. Right now, too many residents feel that confidence is missing.
+  </p>
+
+  <h3>Disrespect for Oversight and the Rule of Law</h3>
+  <p>
+    Recent actions surrounding police leadership have raised serious concerns.
+  </p>
+
+  <p>
+    By moving forward with decisions regarding the Police Chief without City Council approval—and then vetoing efforts by the Council to conduct oversight—Mayor Coogan has shown a troubling disregard for the role of the City Council.
+  </p>
+
+  <p>
+    That is not how government is supposed to work.
+  </p>
+
+  <p>
+    Checks and balances exist for a reason. Ignoring them undermines transparency, weakens accountability, and disrespects the voice of the people represented by the Council.
+  </p>
+
+  <h3>A Mayor Who Doesn’t Act Like One</h3>
+  <p>
+    At one point, Mayor Coogan compared himself to a “vice principal.”
+  </p>
+
+  <p>
+    But Fall River doesn’t need a vice principal.
+  </p>
+
+  <p>
+    We need a mayor—someone who leads from the front, takes responsibility, and communicates openly with the people they serve.
+  </p>
+
+  <h3>Residents Are Being Left Behind</h3>
+  <p>
+    While City Hall struggles with internal issues, residents are dealing with real challenges:
+  </p>
+
+  <ul>
+    <li>Rising housing costs</li>
+    <li>Increasing financial pressure</li>
+    <li>No meaningful relief</li>
+  </ul>
+
+  <p>
+    These issues demand urgency and action. Instead, we’ve seen inaction.
+  </p>
+
+  <h3>A Pattern We Can’t Ignore</h3>
+  <p>Taken together, these issues paint a clear picture:</p>
+
+  <ul>
+    <li>Poor crisis management</li>
+    <li>Lack of transparency</li>
+    <li>Public safety concerns</li>
+    <li>Disregard for oversight</li>
+    <li>Breakdown of trust</li>
+  </ul>
+
+  <p>
+    This is not one mistake. It is a pattern.
+  </p>
+
+  <h3>Why We Must Act</h3>
+  <p>
+    Fall River deserves better.
+  </p>
+
+  <p>
+    We deserve leadership that is competent, transparent, and accountable to the people—not decisions made behind closed doors.
+  </p>
+
+  <p>
+    If this pattern continues for a full two-year term, the consequences for our city will be severe. Continued instability, lack of accountability, and weak leadership will only deepen the challenges we already face.
+  </p>
+
+  <p>
+    A full two-year term under this leadership would be a disaster for Fall River.
+  </p>
+
+  <p>
+    That is why we must act now.
+  </p>
+
+  <p>
+    We are calling for the recall of Mayor Coogan—because the future of our city depends on it.
+  </p>
+</div>
+```
+
+  </section>
+
+  <footer>
+    <p>
+      Paid for by the Committee to Recall Mayor Paul Coogan PAC.<br>
+      Not authorized by any candidate or candidate committee.
+    </p>
+  </footer>
 
 </body>
 </html>
