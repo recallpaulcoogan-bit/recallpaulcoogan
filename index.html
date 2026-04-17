@@ -1,132 +1,85 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Recall Mayor Paul Coogan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recall Mayor Paul Coogan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Translate -->
+<style>
+body {
+  font-family: Arial;
+  background: #0b3d91;
+  color: white;
+  text-align: center;
+}
 
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'es,pt,ht,km',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
+header {
+  padding: 20px;
+}
 
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+img {
+  width: 200px;
+  border-radius: 50%;
+}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0b3d91;
-      color: white;
-      text-align: center;
-    }
-    header {
-      background: gold;
-      color: black;
-      padding: 20px;
-    }
-    nav a {
-      margin: 10px;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .button {
-      background: gold;
-      color: black;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 15px;
-    }
-    footer {
-      background: #001f5b;
-      padding: 20px;
-      font-size: 14px;
-    }
-    input, textarea {
-      width: 80%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: none;
-    }
-  </style>
+a.button {
+  background: gold;
+  color: black;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+section {
+  padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Recall Mayor Paul Coogan</h1>
-  <nav>
-    <a href="#about">Why Recall?</a>
-    <a href="#volunteer">Volunteer</a>
-    <a href="#donate">Donate</a>
-  </nav>
+<img src="YOUR-LOGO-FILENAME.jpeg">
+<h1>Recall Mayor Paul Coogan</h1>
 </header>
 
-<div id="google_translate_element"></div>
+<section>
+<h2>Donate</h2>
 
-<section id="about">
-  <h2>Why We Are Calling for a Recall</h2>
-  <p>
-    This campaign is about accountability, transparency, and putting the people of Fall River first.
-    We believe leadership must answer to the public, and when it fails, the people have the right to act.
-  </p>
-</section>
+<a href="#" class="button">$25</a>
+<a href="#" class="button">$50</a>
+<a href="#" class="button">$100</a>
 
-<section id="volunteer">
-  <h2>Volunteer</h2>
-  <p>Join the movement. Help us collect signatures, spread the word, and organize.</p>
-
-  <form action="mailto:recallpaulcoogan@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="Name" placeholder="Your Name" required><br>
-    <input type="email" name="Email" placeholder="Your Email" required><br>
-    <textarea name="Message" placeholder="How would you like to help?"></textarea><br>
-    <button class="button" type="submit">Send</button>
-  </form>
-</section>
-
-<section id="donate">
-  <h2>Support the Recall Effort</h2>
-  <p>Your contribution helps us reach voters and run this campaign.</p>
-
-  <!-- REPLACE THIS LINK WITH YOUR STRIPE LINK LATER -->
-
-<a href="#" class="button">Donate Now</a>
-
-  <p><strong>Donation Rules:</strong></p>
-  <p>
-    Contributions must comply with Massachusetts campaign finance laws.
-    Donations are not tax deductible. Contributors may be required to provide
-    name, address, occupation, and employer information.
-  </p>
+<p>
+Contributions must follow Massachusetts campaign finance laws.
+</p>
 </section>
 
 <section>
-  <h2>Follow Us</h2>
-  <a href="#" class="button">Visit Our Facebook Page</a>
+<h2>Volunteer</h2>
+
+<form action="mailto:recallpaulcoogan@gmail.com" method="post">
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<br>
+<button class="button">Send</button>
+</form>
+</section>
+
+<section>
+<h2>Why Recall?</h2>
+
+<p>
+It’s time for accountability and new leadership in Fall River.
+</p>
+
 </section>
 
 <footer>
-  <p>
-    Paid for by the Committee to Recall Mayor Paul Coogan PAC.<br>
-    Not authorized by any candidate or candidate committee.
-  </p>
+<p>
+Paid for by the Committee to Recall Mayor Paul Coogan PAC.
+</p>
 </footer>
 
 </body>
