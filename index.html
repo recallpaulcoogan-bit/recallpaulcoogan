@@ -39,6 +39,7 @@ header {
 
 h1 {
   color: gold;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -67,6 +68,13 @@ nav a:hover {
 .hero h2 {
   color: gold;
   font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.1rem;
 }
 
 section {
@@ -86,6 +94,8 @@ section {
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .big-donate {
@@ -110,17 +120,23 @@ label {
   display: block;
   margin-top: 12px;
   color: gold;
+  font-weight: bold;
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
   margin: 6px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: none;
 }
 
 .checkbox-group label {
   display: block;
   margin: 5px 0;
+  font-weight: normal;
+  color: white;
 }
 
 .about {
@@ -132,6 +148,10 @@ input, textarea {
   color: gold;
 }
 
+.about ul {
+  padding-left: 24px;
+}
+
 footer {
   background: #06153a;
   padding: 20px;
@@ -140,6 +160,28 @@ footer {
   font-size: 14px;
   border-top: 3px solid gold;
 }
+
+@media (max-width: 700px) {
+  .logo {
+    width: 190px;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  .button, .big-donate {
+    width: calc(100% - 20px);
+    max-width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
 </style>
 
 </head>
@@ -147,7 +189,7 @@ footer {
 <body>
 
 <header>
-  <img src="0EAE4F49-64AC-4980-B43B-48BBA9934C32.jpeg" class="logo">
+  <img src="0EAE4F49-64AC-4980-B43B-48BBA9934C32.jpeg" class="logo" alt="Recall Paul Coogan logo">
   <h1>Recall Mayor Paul Coogan</h1>
 
   <nav>
@@ -162,6 +204,9 @@ footer {
 
 <div class="hero">
   <h2>It’s Time for New Leadership in Fall River</h2>
+  <p>
+    This recall effort is about accountability, transparency, and restoring trust in city government.
+  </p>
 </div>
 
 <section id="donate">
@@ -178,21 +223,20 @@ footer {
     <a href="https://donorbox.org/recall-mayor-paul-coogan" target="_blank" class="button">$250</a>
   </div>
 
-  <p style="text-align:center;">
+  <p style="text-align:center; max-width:800px; margin:20px auto 0;">
     Contributions must comply with Massachusetts campaign finance laws.
   </p>
 </section>
 
 <section id="volunteer">
-  <h2 style="color: gold;">Volunteer</h2>
+  <h2 style="color: gold; text-align:center;">Volunteer</h2>
 
   <form action="https://formsubmit.co/recallpaulcoogan@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Volunteer Signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
 ```
-<input type="hidden" name="_subject" value="New Volunteer Signup">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-
 <label>Name</label>
 <input type="text" name="Name" required>
 
@@ -210,9 +254,10 @@ footer {
   <label><input type="checkbox" name="Volunteer[]" value="General volunteer support"> General volunteer support</label>
 </div>
 
+<label>Anything else?</label>
 <textarea name="Message" placeholder="Anything else?"></textarea>
 
-<button class="button">Send</button>
+<button class="button" type="submit">Send</button>
 ```
 
   </form>
@@ -226,9 +271,7 @@ footer {
   </p>
 
   <div style="text-align:center;">
-    <a href="https://www.facebook.com/RecallPaulCoogan" target="_blank" class="big-donate">
-      Visit Our Facebook Page
-    </a>
+    <a href="https://www.facebook.com/RecallPaulCoogan" target="_blank" class="big-donate">Visit Our Facebook Page</a>
   </div>
 </section>
 
@@ -239,29 +282,136 @@ footer {
 
   <p>Fellow residents,</p>
 
-  <p>This recall effort is not about politics—it’s about accountability.</p>
+  <p>
+    This recall effort is not about politics—it’s about accountability.
+  </p>
 
   <p>
-    Under Paul Coogan, Fall River has seen a consistent pattern of weak leadership,
-    poor judgment, and a lack of transparency that has eroded trust in our city government.
+    Under Paul Coogan, Fall River has seen a consistent pattern of weak leadership, poor judgment, and a lack of transparency that has eroded trust in our city government.
   </p>
 
   <h3>Failure When It Mattered Most</h3>
   <p>
-    When a major winter storm hit in February 2026, our city wasn’t ready. Streets went uncleared, neighborhoods were left stranded, and residents were forced to deal with unsafe conditions for days.
+    When a major winter storm hit in February 2026, our city wasn’t ready. Streets went uncleared, neighborhoods were left stranded, and residents were forced to deal with unsafe conditions for days. The situation became so severe that outside help—including state resources—was needed to step in.
+  </p>
+
+  <p>
+    That wasn’t just bad luck. That was a failure of leadership.
+  </p>
+
+  <h3>Secrecy and Dysfunction in Our Schools</h3>
+  <p>
+    As Chair of the School Committee, Mayor Coogan has created confusion instead of stability.
+  </p>
+
+  <p>
+    He filed a complaint with the state about the School Committee—without informing the members he leads—and only revealed it weeks later. That decision blindsided the committee, undermined trust, and disrupted the work being done on behalf of our students.
+  </p>
+
+  <p>
+    Public meetings have also been mishandled, with residents denied equal opportunity to speak. The result? Frustration, division, and a growing sense that decisions are being made without the public’s voice.
   </p>
 
   <h3>Public Safety Concerns Are Growing</h3>
+  <p>
+    Public safety is one of the most basic responsibilities of any city government—and residents increasingly feel it is not being prioritized.
+  </p>
+
+  <p>Across Fall River, people are voicing concerns about:</p>
   <ul>
-    <li>Slow or inconsistent responses</li>
-    <li>Lack of clear communication</li>
-    <li>Leadership instability</li>
-    <li>Lack of transparency</li>
+    <li>Slow or inconsistent responses to ongoing issues</li>
+    <li>Lack of clear communication from leadership</li>
+    <li>Ongoing instability and controversy surrounding police leadership</li>
+    <li>Decisions being made without transparency or proper oversight</li>
   </ul>
+
+  <p>
+    Public safety depends on trust, coordination, and strong leadership. Right now, too many residents feel that confidence is missing.
+  </p>
+
+  <h3>Disrespect for Oversight and the Rule of Law</h3>
+  <p>
+    Recent actions surrounding police leadership have raised serious concerns.
+  </p>
+
+  <p>
+    By moving forward with decisions regarding the Police Chief without City Council approval—and then vetoing efforts by the Council to conduct oversight—Mayor Coogan has shown a troubling disregard for the role of the City Council.
+  </p>
+
+  <p>
+    That is not how government is supposed to work.
+  </p>
+
+  <p>
+    Checks and balances exist for a reason. Ignoring them undermines transparency, weakens accountability, and disrespects the voice of the people represented by the Council.
+  </p>
+
+  <h3>A Mayor Who Doesn’t Act Like One</h3>
+  <p>
+    At one point, Mayor Coogan compared himself to a “vice principal.”
+  </p>
+
+  <p>
+    But Fall River doesn’t need a vice principal.
+  </p>
+
+  <p>
+    We need a mayor—someone who leads from the front, takes responsibility, and communicates openly with the people they serve.
+  </p>
+
+  <h3>Residents Are Being Left Behind</h3>
+  <p>
+    While City Hall struggles with internal issues, residents are dealing with real challenges:
+  </p>
+
+  <ul>
+    <li>Rising housing costs</li>
+    <li>Increasing financial pressure</li>
+    <li>No meaningful relief</li>
+  </ul>
+
+  <p>
+    These issues demand urgency and action. Instead, we’ve seen inaction.
+  </p>
+
+  <h3>A Pattern We Can’t Ignore</h3>
+  <p>Taken together, these issues paint a clear picture:</p>
+
+  <ul>
+    <li>Poor crisis management</li>
+    <li>Lack of transparency</li>
+    <li>Public safety concerns</li>
+    <li>Disregard for oversight</li>
+    <li>Breakdown of trust</li>
+  </ul>
+
+  <p>
+    This is not one mistake. It is a pattern.
+  </p>
 
   <h3>Why We Must Act</h3>
   <p>
-    Fall River deserves better. We are calling for accountability and new leadership.
+    Fall River deserves better.
+  </p>
+
+  <p>
+    We deserve leadership that is competent, transparent, and accountable to the people—not decisions made behind closed doors.
+  </p>
+
+  <p>
+    If this pattern continues for a full two-year term, the consequences for our city will be severe. Continued instability, lack of accountability, and weak leadership will only deepen the challenges we already face.
+  </p>
+
+  <p>
+    A full two-year term under this leadership would be a disaster for Fall River.
+  </p>
+
+  <p>
+    That is why we must act now.
+  </p>
+
+  <p>
+    We are calling for the recall of Mayor Coogan—because the future of our city depends on it.
   </p>
 </section>
 
