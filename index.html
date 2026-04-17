@@ -153,6 +153,7 @@ footer {
   <nav>
     <a href="#donate">Donate</a>
     <a href="#volunteer">Volunteer</a>
+    <a href="#facebook">Facebook</a>
     <a href="#about">Why Recall?</a>
   </nav>
 </header>
@@ -185,25 +186,31 @@ footer {
 <section id="volunteer">
   <h2 style="color: gold;">Volunteer</h2>
 
-  <form action="mailto:recallpaulcoogan@gmail.com" method="post">
-    <label>Name</label>
-    <input type="text" required>
+  <form action="https://formsubmit.co/recallpaulcoogan@gmail.com" method="POST">
 
 ```
+<input type="hidden" name="_subject" value="New Volunteer Signup">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+<label>Name</label>
+<input type="text" name="Name" required>
+
 <label>Email</label>
-<input type="email" required>
+<input type="email" name="Email" required>
 
 <label>How would you like to help?</label>
 
 <div class="checkbox-group">
-  <label><input type="checkbox"> Collect signatures</label>
-  <label><input type="checkbox"> Knock doors</label>
-  <label><input type="checkbox"> Make phone calls</label>
-  <label><input type="checkbox"> Help at events</label>
-  <label><input type="checkbox"> Spread the word online</label>
+  <label><input type="checkbox" name="Volunteer[]" value="Collect signatures"> Collect signatures</label>
+  <label><input type="checkbox" name="Volunteer[]" value="Knock doors"> Knock doors</label>
+  <label><input type="checkbox" name="Volunteer[]" value="Make phone calls"> Make phone calls</label>
+  <label><input type="checkbox" name="Volunteer[]" value="Help at events"> Help at events</label>
+  <label><input type="checkbox" name="Volunteer[]" value="Spread the word online"> Spread the word online</label>
+  <label><input type="checkbox" name="Volunteer[]" value="General volunteer support"> General volunteer support</label>
 </div>
 
-<textarea placeholder="Anything else?"></textarea>
+<textarea name="Message" placeholder="Anything else?"></textarea>
 
 <button class="button">Send</button>
 ```
@@ -211,34 +218,50 @@ footer {
   </form>
 </section>
 
+<section id="facebook">
+  <h2 style="color: gold; text-align:center;">Follow Us on Facebook</h2>
+
+  <p style="text-align:center;">
+    Stay updated, share posts, and help spread the word.
+  </p>
+
+  <div style="text-align:center;">
+    <a href="https://www.facebook.com/RecallPaulCoogan" target="_blank" class="big-donate">
+      Visit Our Facebook Page
+    </a>
+  </div>
+</section>
+
 <section id="about" class="about">
   <h2>Why We Are Calling for a Recall</h2>
 
   <h3>It’s Time for New Leadership in Fall River</h3>
 
+  <p>Fellow residents,</p>
+
   <p>This recall effort is not about politics—it’s about accountability.</p>
 
   <p>
     Under Paul Coogan, Fall River has seen a consistent pattern of weak leadership,
-    poor judgment, and lack of transparency.
+    poor judgment, and a lack of transparency that has eroded trust in our city government.
   </p>
 
   <h3>Failure When It Mattered Most</h3>
   <p>
-    When a major winter storm hit in February 2026, the city was not prepared.
+    When a major winter storm hit in February 2026, our city wasn’t ready. Streets went uncleared, neighborhoods were left stranded, and residents were forced to deal with unsafe conditions for days.
   </p>
 
-  <h3>Public Safety Concerns</h3>
+  <h3>Public Safety Concerns Are Growing</h3>
   <ul>
-    <li>Slow responses</li>
-    <li>Lack of communication</li>
+    <li>Slow or inconsistent responses</li>
+    <li>Lack of clear communication</li>
     <li>Leadership instability</li>
     <li>Lack of transparency</li>
   </ul>
 
   <h3>Why We Must Act</h3>
   <p>
-    Fall River deserves better leadership. That is why we must act now.
+    Fall River deserves better. We are calling for accountability and new leadership.
   </p>
 </section>
 
